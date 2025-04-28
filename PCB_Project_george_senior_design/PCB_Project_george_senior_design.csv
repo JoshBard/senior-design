@@ -1,0 +1,18 @@
+Description,Designator,Manufacturer 1,Manufacturer Part Number 1,Quantity,Supplier 1,Supplier Part Number 1,Supplier Unit Price 1
+,,,,,,,
+"Aluminum Electrolytic Capacitor, 47 uF, +/-20%, 50 V, -40 to 85 degC, 2-Pin THD, RoHS, Bulk","C1, C4",Panasonic,ECA-1HM470,2,Future Electronics,4028629,0.0451
+"Aluminum Electrolytic Capacitor, 100 uF, +/- 20%, 50 V, -40 to 85 degC, 2-Pin THD, RoHS, Bulk","C2, C3",Panasonic,ECA-1HM101,2,Newark,25AC8781,0.292
+CAP ALUM 330UF 20% 35V RADIAL TH,"C5, C6",Rubycon,35ZLH330MEFCT810X12.5,2,Digikey,1189-3752-1-ND,0.57
+"LED Uni-Color Green, 100 mW, 30 mA, -55 to 100 degC, 2-Pin THD, RoHS, Bulk","DS1, DS2, DS3",Vishay Lite-On,LTL-1CHG,3,Digikey,160-1710-ND,0.17
+PTC RESET FUSE 16V 5A 2920,"F1, F2",Bel Fuse Inc.,2920L50016MR,2,Digikey,5923-0ZCF0250FF2CCT-ND,0.35
+Socket DC Supply Connector Female,J1,"	AMASS",XT60PW-F,1,TME,XT60PW-F,1.08
+PCB Terminal Screw 5mm 16AWG 400V 17.5A 2 Position COMBICON PT Series,"J2, J4",Phoenix Contact,1935161,2,Digikey,277-1667-ND,$0.39 
+PCB Terminal Screw 5mm 16AWG 400V 13.5A 4 Position COMBICON MKDSN Series,J3,Phoenix Contact,1935187,1,Digikey,277-1579-ND,0.78
+PCB Terminal Screw 5mm 16AWG 400V 17.5A 7 Position COMBICON PT Series,J5,Phoenix Contact,1935213,1,Digikey,277-1582-ND,1.35
+"Axial Resistor, 475 Ohm, +/- 1%, 0.25 W, -55 to 155 degC, 2-Pin THD, RoHS, Bulk",R1,Yageo,MFR-25FBF52-475R,1,Farnell,3952810,
+"Axial Resistor, 10 KOhm, +/- 1%, 0.25 W, -55 to 155 degC, 2-Pin THD, RoHS, Bulk","R2, R8, R9, R10",Yageo,MFR-25FBF52-10K,4,Digikey,10.0KXBK-ND,0.1
+RES 0 OHM JUMPER 1/4W AXIAL,"R3, R4",YAGEO,ZOR-25-R-52-0R,2,Digikey,13-ZOR-25-R-52-0RCT-ND,0.1
+"Axial Resistor, 1 KOhm, +/- 1%, 250 mW, -55 to 155 degC, 2-Pin THD, RoHS, Bulk","R5, R6",Yageo,MFR-25FBF52-1K,2,Digikey,1.00KXBK-ND,0.1
+RES 1.5K OHM 5% 1/4W AXIAL,R7,Stackpole Electronics Inc,CF14JT1K50,1,Digikey,CF14JT1K50CT-ND,0.1
+DC DC CONVERTER 0.7525-5.5V 25W,U1,Murata Power Solutions Inc.,OKX-T/5-D12N-C,1,Digikey,811-2622-ND,7.16
+MOSFET P-CH 55V 74A TO220AB,"U2, U3",Infineon Technologies,IRF4905PBF,2,Digikey,IRF4905PBF-ND,2.5

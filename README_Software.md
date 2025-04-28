@@ -7,11 +7,11 @@
 4. SSH in with the username you created in the options step of the Raspberry Pi imager.
 
 ## Hardware Setup
-1. Attach your Waveshare LoRa hat to the Raspberry Pi.
+1. Attach your [Waveshare LoRa hat](https://www.waveshare.com/sx1262-lorawan-hat.htm?sku=22002) to the Raspberry Pi.
 2. Make sure that the antenna is hooked up to the hat before you power it on; otherwise, you will short the radio board immediately.
 
 ## Meshtastic Firmware Installation
-1. Once the board is powered on, copy this Meshtastic firmware link and use `wget` to install it on your Raspberry Pi.
+1. Once the board is powered on, copy [this](https://github.com/meshtastic/firmware/releases/download/v2.5.18.89ebafc/meshtasticd_2.5.18.89ebafc_arm64.deb) Meshtastic firmware link and use `wget` to install it on your Raspberry Pi.
 2. Run:
     ```bash
     sudo apt update
@@ -49,7 +49,7 @@
     ```bash
     sudo nano /etc/meshtasticd/config.yaml
     ```
-2. Look for the `sx1268` entry, change that to `sx1262`, and remove the hashtags up to the line that says `Reset: 18`.  
+2. Look for the `sx126x` entry, change that to `sx1262`, and remove the hashtags up to the line that says `Reset: 18`.  
 3. Do not change anything else.
 4. Enable the service:
     ```bash
@@ -61,8 +61,8 @@ If you have further questions, refer to this tutorial.
 ## GitHub Repositories
 1. Make sure the time is set on the Raspberry Pi before you clone or GitHub access will fail.
 2. Copy the GitHub repositories:
-   - For the onboard node, refer to this GitHub: `[Onboard GitHub Link]`
-   - For the onshore node, refer to this GitHub: `[Onshore GitHub Link]`
+   - For the onboard node, refer to this GitHub: `[https://github.com/JoshBard/onboard]`
+   - For the onshore node, refer to this GitHub: `[https://github.com/JoshBard/onshore]`
 
 ## Python Environment Setup
 1. Python3 is already installed with Raspberry Pi OS.

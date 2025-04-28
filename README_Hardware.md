@@ -19,8 +19,15 @@ The custom-designed power distribution PCB is included in this repository.
 - **Battery**: 11.1V 3S 5000mAh LiPo battery
 - **ESC**: 30A Bidirectional Electronic Speed Controller (ESC) for motor control
 - **Power Management**: Custom PCB for regulated 5V/12V outputs and reverse polarity protection
-- **Telemetry**: 433 MHz SiK radio module for ground communication
-- **Onboard Computer**: Raspberry Pi (powered from PCB stepped-down voltage)
+- **Onboard Communication Computer**: Raspberry Pi (handles long-range communication between the sailboat and an onshore Raspberry Pi)
+
+---
+
+## System Architecture
+
+- The **Pixhawk** acts as the main onboard computer, handling navigation, sail, rudder, and motor control.
+- The **onboard Raspberry Pi** is used **only for radio communication** with the **onshore Raspberry Pi**.
+- Commands from the onshore Raspberry Pi are relayed to the Pixhawk through the onboard Raspberry Pi over a wireless link.
 
 ---
 
@@ -36,8 +43,8 @@ The custom-designed power distribution PCB is included in this repository.
   - **Passthrough Power to PCB**
   - **Voltage/Current sensing to Pixhawk**
 - **Power PCB**:
-  - Steps down battery voltage to 5V for Raspberry Pi
-  - Provides power and drive voltage for the 30A ESC to the motor
+  - Steps down battery voltage to 5V to power the onboard Raspberry Pi
+  - Provides power and drive voltage for the 30A ESC and motor
 
 ---
 
@@ -47,7 +54,7 @@ The custom-designed power distribution PCB is included in this repository.
 - Secure battery, PM02 module, and ESC connections with proper strain relief and foam padding.
 - Use corrosion-resistant connectors and marine-grade wiring wherever possible.
 - Validate sensor signal conditioning (voltage levels, noise filtering) before flight controller integration.
-- Ensure Raspberry Pi is properly isolated and protected from motor back-emf noise.
+- Ensure Raspberry Pi communication interfaces (UART, Ethernet, or Wi-Fi) are correctly configured and tested.
 
 ---
 
@@ -56,6 +63,6 @@ The custom-designed power distribution PCB is included in this repository.
 - Add current/voltage sensors for real-time monitoring.
 - Upgrade servos to higher waterproof IP-rated models.
 - Add backup GPS module for redundancy.
+- Explore redundant communication links for fail-safe operation.
 
 ---
-
